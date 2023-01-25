@@ -10,7 +10,7 @@ config for netlify CMS in `/admin` directory
 
 ## Запустить
 
-Чтобы работало, нужнго скачать [node js LTS](https://nodejs.org/en/)
+Чтобы работало, нужно скачать [node js LTS](https://nodejs.org/en/)
 
 В первый раз
 
