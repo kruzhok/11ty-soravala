@@ -1,4 +1,4 @@
-# Ready to go 11ty blog Startkit
+# Сайт Сортавала
 
 Built with:
 - 11ty
@@ -8,10 +8,19 @@ Built with:
 
 config for netlify CMS in `/admin` directory
 
-## Launch it
+## Запустить
+
+Чтобы работало, нужнго скачать (node js)[https://nodejs.org/en/]
+
+В первый раз
 
 ```bash
 npm i && npm start
+```
+Потом
+
+```bash
+npm start
 ```
 
 ## Feel free
