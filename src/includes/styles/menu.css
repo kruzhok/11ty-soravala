@@ -1,0 +1,42 @@
+:root {
+    --bg-color: #252323;
+    --text-color: #ffffff;
+}
+
+.navigation {
+    display: flex;
+    justify-content: left;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    height: 100px;
+    gap: 10px;
+    font-size: 18px;
+}
+  
+.logo {
+    height: 100px;
+}
+
+.menu-button {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.close-menu-button {
+    display: none
+}
+
+.oth_img {
+    margin-right: 5px;
+    
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+    justify-content: right;
+    align-items: center;
+}

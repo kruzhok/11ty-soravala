@@ -1,0 +1,30 @@
+@media screen and (max-width: 900px) {
+
+    .info-content {
+        padding: 0px 22px 0px 22px;
+    }
+    
+    .big-text {
+        font-size: 24px;
+    }
+    
+    .small-text {
+        font-size: 16px;
+    }
+    
+    .image {
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+    }
+    
+    .image-text {
+        margin-top: 12px;
+        font-size: 12px;
+        margin-bottom: 102px;
+    }
+    
+    .down-text {
+        font-size: 24px;
+    }
+}

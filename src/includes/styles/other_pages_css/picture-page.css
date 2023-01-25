@@ -1,0 +1,65 @@
+.image-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0px 64px;
+    margin-bottom: 100px;
+    gap: 83px;
+}
+
+.page-image {
+    border-radius: 10px;
+    width: 100%;
+    height: 1fr;
+}
+
+.image-info {
+    display: grid;
+    grid-template-rows: 180px 146px 1fr;
+}
+
+.pic-author {
+    display: grid;
+    grid-template-rows: 72px 50px 24px;
+    gap: 10px;
+}
+
+.user-avatar {
+    width: 72px;
+    height: auto;
+    border-radius: 36px;
+}
+
+.pic-nickname {
+    font-size: 40px;
+}
+
+.signature {
+    font-size: 12px;
+}
+
+.img-about {
+    margin-top: 62px;
+    font-size: 18px;
+}
+
+.oth-photo {
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+.switch-section-m {
+    display: none;
+}
+
+/*да.*/
+
+
+/*
+header, section, footer {
+  border: 1px solid pink;
+}
+
+div {
+  border: 1px solid aquamarine;
+}
+*/

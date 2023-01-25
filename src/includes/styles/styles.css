@@ -1,0 +1,295 @@
+:root {
+  --bg-color: #252323;
+  --text-color: #ffffff;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  overflow-x: hidden;
+
+  /* Обязательно */
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.header {
+  min-height: 193px;
+  display: grid;
+  grid-template-columns: 1fr 230px 1fr;
+  gap: 20px;
+  padding: 53px 64px 10px 64px;
+  box-sizing: border-box;
+}
+
+.close-menu-button {
+  display: none;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 14px;
+  gap: 10px;
+  padding: 0px 71px 36px 22px;
+}
+
+.desc_text {
+  font-size: 54px;
+  padding-left: 64px;
+}
+
+.slider {
+  overflow-x: auto;
+  /* Задал минимальную высоту, чтобы скролл не налезал на картинки */
+  min-height: 570px;
+}
+
+.slider-items {
+  display: flex;
+  gap: 18px;
+  overflow-y: hidden;
+}
+
+.image-card--large {
+  min-width: 560px;
+  height: 560px;
+
+  /* Делаю для корректной работы абсолютного позиционирования */
+  position: relative;
+}
+
+.user {
+  display: flex;
+  /* Лучше спозиционировать абсолютно и прибить к низу карточки */
+  /* position: relative; */
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-left: 20px;
+  gap: 10px;
+  /* top: -90px; */
+}
+
+.username {
+  font-size: 24px;
+}
+
+.feeling {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.emote {
+  background-color: black;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+
+.headline {
+  box-sizing: border-box;
+  padding: 89px 64px 118px;
+}
+
+.headline-text {
+  max-width: 1292px;
+  font-size: 54px;
+  /* были лишние неконтроллируемые отступы из браузера */
+  margin: 0 0 60px;
+}
+
+.switch-section-m {
+  display: none;
+}
+
+.subheadline-text {
+  font-size: 24px;
+  max-width: 963px;
+  /* Были лишние отступы из браузера */
+  margin: 0;
+}
+
+.grid {
+  padding: 0 64px;
+}
+
+.grid-heading {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  /* Добавил нижний отступ всему блоку вместо внутреннего элемента */
+  margin-bottom: 20px;
+}
+
+.grid-heading-text {
+  /* Тут были отступы из браузера, они неуправляемые, поэтому убираем */
+  margin: 0 0 20px;
+  /* Не задан размер шрифта был */
+  font-size: 36px;
+}
+
+
+
+.switch-checkbox-2 {
+  /* margin-bottom: 20px; */
+
+  /* Делаю флекс-контейнером, чтобы поровнять элементы по центру вертикали */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tumbler-text {
+  opacity: .8;
+  /* margin-left: 50px; */
+  /* Тут вообще лучше убрать все отступы */
+  margin: 0;
+}
+
+.toggle-2 {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+  background-color: var(--bg-color);
+  border-radius: 30px;
+  border: 2px solid var(--text-color);
+}
+
+.toggle-2:after {
+  content: '';
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background-color: var(--text-color);
+  left: 1px;
+  top: 1px;
+  transition: all 0.5s;
+}
+
+.checkbox-2:checked+.toggle-2::after {
+  left: 26px;
+}
+
+.checkbox-2:focus+.toggle-2 {
+  box-shadow: 0 0 5px red;
+}
+
+.checkbox-2 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.grid-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(335px, 1fr));
+  gap: 9px;
+}
+
+.image-card--small {
+  width: 100%;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  border-radius: 10%;
+  z-index: 1;
+  position: relative
+}
+
+.image-card--small:hover {
+  transform: scale(1.005);
+}
+
+.image-small {
+  /* Набор свойств, чтоб вместить фото и не потерять пропорции */
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  /* width: auto; */
+}
+
+.profile {
+  position: absolute;
+  /* Ширина и высота нужна только картинке */
+  /* width: 30px;
+  height: 30px; */
+  overflow: hidden;
+  /* align-items: center;
+  justify-content: center; */
+  /* border-radius: 50%; */
+  /* z-index: 2; */
+  bottom: 20px;
+  left: 20px;
+
+  /* Сделал флекс-контейнером, чтобы расположить в линию имя и картинку */
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.avatar {
+  /* height: 100%;
+  width: auto; */
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.nickname {
+  font-size: 18px;
+  margin: 0;
+  /* position: absolute;
+  bottom: 8px;
+  left: 65px; */
+}
+
+.footer {
+  min-height: 155px;
+  display: flex;
+  gap: 91px;
+  align-items: start;
+  margin-top: 150px;
+  padding: 0 64px;
+}
+
+.left-text {
+  /* Лишний отступ из браузера */
+  margin: 0;
+}
+
+/*.footer-description, .copyright {
+  min-height: 100px; 
+} 
+*/
+
+.center-text {
+  /* margin-top: 35px; */
+  margin: 0;
+}
+
+.desc_text_m {
+  /* Лишний отступ из браузера */
+  margin: 0;
+  /* display: none; */
+}

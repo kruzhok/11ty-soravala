@@ -1,0 +1,31 @@
+
+
+.info-content {
+    padding: 0px 148px 0px 72px;
+}
+
+.big-text {
+    font-size: 54px;
+    margin-bottom: 57px;
+}
+
+.small-text {
+    font-size: 24px;
+    margin-bottom: 102px;
+}
+
+.image {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+
+.image-text {
+    margin-top: 12px;
+    font-size: 14px;
+    margin-bottom: 102px;
+}
+
+.down-text {
+    font-size: 54px;
+}

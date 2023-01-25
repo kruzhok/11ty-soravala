@@ -1,0 +1,17 @@
+<section class="slider">
+
+  <div class="slider-items">
+    {% for image in collections.featured %}
+    <a href="{{image.url}}" class="image-card--large" id="img_large">
+      <img class="backgr-image" src="{{image.data.image}}"/>
+      <div class="user">
+        <img class="user-image" src="{{image.data.authorPhoto}}"/>
+        <p class="username">{{image.data.authorName}}</p>
+        <p class="feeling">while feeling</p>
+        <p class="emote">{{image.data.emotion}}</p>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+
+</section>
