@@ -21,13 +21,13 @@ layout: page.njk
       </a>
 
       <div class="main-menu-content">
-        <a href="#">Галерея</a>
-        <a href="#">Авторы</a>
-        <a href="./info.html">О проекте</a>
+        <a href="./picture-page.html">{{staticTexts.menuGallery}}</a>
+        <a href="#">{{staticTexts.menuAuthors}}</a>
+        <a href="info.html">{{staticTexts.menuInfo}}</a>
       </div>
 
       <div class="menu-footer">
-        Этот сайт сделан студентами школы создания сайтов проекта «Кружок» в городе Сортавала.
+        {{staticTexts.mainWebsiteDescription}}
       </div>
     </div>
 </div>
@@ -36,7 +36,7 @@ layout: page.njk
 
     <section class="image-section">
       <div class="switch-section-m">
-        <span class="oth_img">Переключить режим</span>
+        <span class="oth_img">{{staticTexts.imagineModSwitch}}</span>
         <label class="switch-checkbox">
             <input type="checkbox" id="switch" class="checkbox" onclick="test()"/>
             <label for="switch" class="toggle">
@@ -48,7 +48,7 @@ layout: page.njk
       </div>
       <div class="image-info">
           <div class="switch-section">
-              <span class="oth_img">Переключить режим</span>
+              <span class="oth_img">{{staticTexts.imagineModSwitch}}</span>
               <label class="switch-checkbox">
                   <input type="checkbox" id="switch" class="checkbox" onclick="test()"/>
                   <label for="switch" class="toggle">
@@ -73,7 +73,7 @@ layout: page.njk
     </section>
 
     <section class="grid">
-        <p class="oth-photo">Другие фотографии</p>
+        <p class="oth-photo">{{staticTexts.otherPictures}}</p>
         <div class="grid-list">
             <a href="#" class="image-card--small">
                 <img class="image-small" id="change_image" src="./images/kakPushistik.png">
@@ -130,7 +130,7 @@ layout: page.njk
 
     <footer class="footer">
         <!-- Поменял разметку, можно обойтись без div -->
-        <p class="footer-description left-text">Воображаемые версии изображений сделаны с</br> помощью нейросети Midjourney, запросами к которой</br> стали увлечения и эмоции авторов сайта.</p>
-        <p class="desc_text_m">Этот сайт сделан студентами школы создания сайтов проекта «Кружок» в городе Сортавала.</p>
-        <p class="copyright center-text">«Кружок», Сортавала 2022–2023.</p>
+        <p class="footer-description left-text">{{staticTexts.footerDescription}}</p>
+        <p class="desc_text_m">{{staticTexts.mainWebsiteDescription}}</p>
+        <p class="copyright center-text">{{staticTexts.copyright}}</p>
       </footer>
