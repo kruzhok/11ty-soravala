@@ -15,7 +15,7 @@ config for netlify CMS in `/admin` directory
 В первый раз
 
 ```bash
-npm i && npm start
+npm i ; npm start
 ```
 Потом
 
