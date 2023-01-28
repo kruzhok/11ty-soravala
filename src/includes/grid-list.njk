@@ -2,11 +2,12 @@
 
     {% for image in collections.posts %}
         <a href="{{image.url}}" class="image-card--small" id="img_small">
-            <img class="image-small" id="change_image" src="{{image.data.image}}">
-                <div class="profile">
-                  <img class="avatar" src="{{image.data.authorPhoto}}">
-                  <h3 class="nickname">{{image.data.authorName}}</h3>
-                </div>
+            <img class="image-small image-small--reality" id="change_image" src="{{image.data.image}}">
+            <img class="image-small image-small--fantasy hidden-image" id="change_image" src="{{image.data.imageFantasy}}">
+            <div class="profile">
+              <img class="avatar" src="{{image.data.authorPhoto}}">
+              <h3 class="nickname">{{image.data.authorName}}</h3>
+            </div>
         </a>
     {% endfor %}
 

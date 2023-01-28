@@ -8,20 +8,21 @@ layout: page.njk
       <div class="switch-section-m">
         <span class="oth_img">{{staticTexts.imagineModSwitch}}</span>
         <label class="switch-checkbox">
-            <input type="checkbox" id="switch" class="checkbox" onclick="test()"/>
+            <input type="checkbox" id="switch" class="checkbox"/>
             <label for="switch" class="toggle">
         </label>
       </div>
 
       <div class="pic-image">
-          <img src="{{image}}" class="page-image"/>
+          <img src="{{image}}" class="page-image page-image--real"/>
+          <img src="{{imageFantasy}}" class="page-image page-image--fantasy hidden-image"/>
       </div>
       <div class="image-info">
           <div class="switch-section">
               <span class="oth_img">{{staticTexts.imagineModSwitch}}</span>
               <label class="switch-checkbox">
-                  <input type="checkbox" id="switch" class="checkbox" onclick="test()"/>
-                  <label for="switch" class="toggle">
+                  <input type="checkbox" id="switch-detail" class="checkbox"/>
+                  <label for="switch-detail" class="toggle">
               </label>
           </div>
 
