@@ -65,71 +65,19 @@ layout: page.njk
               <div class="signature">{{description}}</div>
           </div>
       </div>
-      <div class="img-about">
-        {{content | safe}}
-      </div>
+        <div class="img-about">
+          {{content | safe}}
+        </div>
       </div>
     </div>
     </section>
 
     <section class="grid">
         <p class="oth-photo">Другие фотографии</p>
-        <div class="grid-list">
-            <a href="#" class="image-card--small">
-                <img class="image-small" id="change_image" src="./images/kakPushistik.png">
-                <div class="profile">
-                    <img class="avatar" src="./images/avatar.jpg">
-
-                    <h3 class="nickname">KakPushistik</h3>
-                </div>
-            </a>
-            <a href="#" class="image-card--small">
-                <img class="image-small" id="change_image" src="./images/kakPushistik.png">
-                <div class="profile">
-                <img class="avatar" src="./images/avatar.jpg">
-                <h3 class="nickname">KakPushistik</h3>
-                </div>
-            </a>
-            <a href="#" class="image-card--small">
-                <img class="image-small" id="change_image" src="./images/kakPushistik.png">
-                <div class="profile">
-                <img class="avatar" src="./images/avatar.jpg">
-                <h3 class="nickname">KakPushistik</h3>
-                </div>
-            </a>
-            <a href="#" class="image-card--small">
-                <img class="image-small" id="change_image" src="./images/kakPushistik.png">
-                <div class="profile">
-                <img class="avatar" src="./images/avatar.jpg">
-                <h3 class="nickname">KakPushistik</h3>
-                </div>
-            </a>
-            <a href="#" class="image-card--small">
-                <img class="image-small" id="change_image" src="./images/kakPushistik.png">
-                <div class="profile">
-                <img class="avatar" src="./images/avatar.jpg">
-                <h3 class="nickname">KakPushistik</h3>
-                </div>
-            </a>
-            <a href="#" class="image-card--small">
-                <img class="image-small" id="change_image" src="./images/kakPushistik.png">
-                <div class="profile">
-                <img class="avatar" src="./images/avatar.jpg">
-                <h3 class="nickname">KakPushistik</h3>
-                </div>
-            </a>
-            <a href="#" class="image-card--small">
-                <img class="image-small" id="change_image" src="./images/kakPushistik.png">
-                <div class="profile">
-                <img class="avatar" src="./images/avatar.jpg">
-                <h3 class="nickname">KakPushistik</h3>
-                </div>
-            </a>
-        </div>
+            {% include 'grid-list.njk' %}
     </section>
 
     <footer class="footer">
-        <!-- Поменял разметку, можно обойтись без div -->
         <p class="footer-description left-text">Воображаемые версии изображений сделаны с</br> помощью нейросети Midjourney, запросами к которой</br> стали увлечения и эмоции авторов сайта.</p>
         <p class="desc_text_m">Этот сайт сделан студентами школы создания сайтов проекта «Кружок» в городе Сортавала.</p>
         <p class="copyright center-text">«Кружок», Сортавала 2022–2023.</p>

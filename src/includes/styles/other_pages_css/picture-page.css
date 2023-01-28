@@ -9,13 +9,18 @@
 .page-image {
     border-radius: 10px;
     width: 100%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    object-fit: cover;
     height: 1fr;
+    align-self: center;
 }
 
 .image-info {
     display: grid;
     grid-template-rows: 180px 146px 1fr;
 }
+
 
 .pic-author {
     display: grid;
