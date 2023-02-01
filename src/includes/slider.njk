@@ -3,7 +3,8 @@
   <div class="slider-items">
     {% for image in collections.featured %}
     <a href="{{image.url}}" class="image-card--large" id="img_large">
-      <img class="backgr-image" src="{{image.data.image}}"/>
+      <img class="backgr-image image-small--reality" id="change_image" src="{{image.data.image}}"/>
+      <img class="backgr-image image-small--fantasy hidden-image" id="change_image" src="{{image.data.imageFantasy}}">
       <div class="user">
         <img class="user-image" src="{{image.data.authorPhoto}}"/>
         <p class="username">{{image.data.authorName}}</p>
