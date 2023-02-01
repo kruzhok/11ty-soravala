@@ -2,7 +2,7 @@
     <div class="slider-items">
         {%if container == 'recentlyAdded'%}
             {% set tag = collections.recentlyAdded %} 
-        {% elseif container == 'galleryFollowed' %}
+        {%elseif container == 'galleryFollowed'%}
             {% set tag = collections.authorsFollowed %}
         {%endif%}
 
