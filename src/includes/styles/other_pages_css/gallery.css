@@ -30,7 +30,7 @@
 }
 
 .slider {
-    overflow-x: auto;
+    overflow-x: hidden;
     overflow-y: hidden;
     min-height: 416px;
 }

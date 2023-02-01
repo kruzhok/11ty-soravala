@@ -8,3 +8,9 @@ const swiper = new Swiper('.swiper', {
     delay: 0
   }
 });
+
+const swiper2 = new Swiper('.swiperTest', {
+  direction: 'horizontal',
+  loop: false,
+  slidesPerView: 'auto',
+});

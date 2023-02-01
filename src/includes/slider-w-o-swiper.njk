@@ -1,5 +1,5 @@
-<section class="slider">
-    <div class="slider-items">
+<section class="slider swiperTest">
+    <div class="slider-items swiper-wrapper">
         {%if container == 'recentlyAdded'%}
             {% set tag = collections.recentlyAdded %} 
         {%elseif container == 'galleryFollowed'%}
@@ -7,7 +7,7 @@
         {%endif%}
 
         {% for image in tag %}
-        <a href="{{image.url}}" class="image-card--large" id="img_large">
+        <a href="{{image.url}}" class="image-card--large swiper-slide" id="img_large">
         <img class="backgr-image image-small--reality" id="change_image" src="{{image.data.image}}"/>
         <img class="backgr-image image-small--fantasy hidden-image" id="change_image" src="{{image.data.imageFantasy}}">
         <div class="user">
