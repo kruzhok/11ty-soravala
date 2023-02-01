@@ -12,5 +12,5 @@ const swiper = new Swiper('.swiper', {
 const swiper2 = new Swiper('.swiperTest', {
   direction: 'horizontal',
   loop: false,
-  slidesPerView: 'auto',
+  slidesPerView: 'auto'
 });
