@@ -10,27 +10,27 @@ permalink: 'info.html'
 <section class="info-content">
     <section class="main-text">
         <div class="big-text">
-            Это абзац большого текста. Каждое из изображений, которое вы здесь видите — это какое-то место, с которым каждого из авторов проекта что-то связывает. Может быть, это библиотека, где они проводят много времени или берег реки куда приходят, когда хочется побыть одним. 
+            {{staticTexts.infoBigText}}
         </div>
         <div class="small-text">
-            Это абзац текста поменьше. У сайта есть важная функция: каждое из изображений на нём имеет вторую версию — она пересечение реального изображения с эмоциями и воображением ребят. Попробуйте её включить:
+            {{staticTexts.infoSmallText}}
         </div>
     </section>
 
     <section class="image">
-        <img src="./images/klass.png"/>
+        <img src="/static/klass.png"/>
         <div class="image-text">
-            знакомьтесь, это класс
+            {{staticTexts.infoImageText}}
         </div>
     </section>
   
     <div class="down-text">
-    Это абзац большого текста. Каждое из изображений, которое вы здесь видите — это какое-то место, с которым каждого из авторов проекта что-то связывает. Может быть, это библиотека, где они проводят много времени или берег реки куда приходят, когда хочется побыть одним. 
+        {{staticTexts.infoDownText}} 
     </div>
 </section>
 
 <footer class="footer">
-    <p class="footer-description left-text">Воображаемые версии изображений сделаны с</br> помощью нейросети Midjourney, запросами к которой</br> стали увлечения и эмоции авторов сайта.</p>
-    <p class="desc_text_m">Этот сайт сделан студентами школы создания сайтов проекта «Кружок» в городе Сортавала.</p>
-    <p class="copyright center-text">«Кружок», Сортавала 2022–2023.</p>
+    <p class="footer-description left-text">{{staticTexts.footerDescription}}</p>
+    <p class="desc_text_m">{{staticTexts.mainWebsiteDescription}}</p>
+    <p class="copyright center-text">{{staticTexts.copyright}}</p>
 </footer>
