@@ -28,6 +28,10 @@
         margin-bottom: 22px;
         font-size: 18px;
     }
+
+    .slider {
+        min-height: 300px;
+    }
     
     .image-card--large {
         min-width: 300px;
@@ -48,6 +52,11 @@
 
     .grid-list {
         grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    }
+
+    .username {
+        font-size: 14px;
+        max-width: 90px;
     }
 
 }
