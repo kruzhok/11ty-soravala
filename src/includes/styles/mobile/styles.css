@@ -1,5 +1,5 @@
 @media screen and (max-width: 900px) {
-
+        
     .header {
         min-height: 100px;
         grid-template-columns: 1fr 1fr;
@@ -13,9 +13,30 @@
 
     .slider {
         min-height: 300px;
-        padding: 0 0 0 22px;
     }
 
+    .user-image {
+        width: 32px;
+        height: 32px;
+        border-radius: 16px;
+    }
+
+    .username {
+        font-size: 14px;
+        max-width: 80px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .feeling {
+        font-size: 12px;
+    }
+
+    .emote {
+        font-size: 14px;
+    }
+    
     .image-card--large {
         width: 300px;
         min-width: 300px;
@@ -27,7 +48,7 @@
         height: 100%;
         border-radius: 3%;
     }
-
+    
     .headline {
         box-sizing: border-box;
         padding: 30px 22px 30px 22px;
@@ -37,12 +58,12 @@
         max-width: 90%;
         font-size: 24px;
     }
-
+    
     .subheadline-text {
         font-size: 16px;
         max-width: 70%;
     }
-
+    
     .grid {
         padding: 0 22px;
     }
@@ -75,7 +96,7 @@
         padding: 0 22px 60px 22px;
 
     }
-
+      
     .desc_text_m {
         display: table;
       }
@@ -83,20 +104,20 @@
 
     .switch-checkbox-2 {
         margin-bottom: 0px;
-      }
-
+      }  
+      
     .switch-section-m {
         margin-top: 30px;
         padding-left: 22px;
         display: table;
     }
-
+      
 }
 
 @media screen and (max-width: 421px) {
     .grid-list {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
         gap: 9px;
     }
 }

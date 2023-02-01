@@ -11,6 +11,13 @@ checkbox.addEventListener('change', function() {
     }
   })
 })
+checkboxMobile.addEventListener('change', function() {
+  checkboxDB.forEach(item => {
+    if(item) {
+      item.checked = checkboxMobile.checked;
+    }
+  })
+})
 
 function checkboxEventListener(checkbox) {
     checkbox.addEventListener('change', function() {
