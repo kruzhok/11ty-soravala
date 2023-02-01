@@ -1,0 +1,60 @@
+---
+eleventyComputed:
+  title: 'Сортавала - галерея'
+layout: page.njk
+permalink: 'gallery.html'
+---
+
+{% include 'header.njk' %}
+
+<style>
+    {% include "styles/other_pages_css/gallery.css" %}
+    {% include "styles/mobile/other_pages_css/gallery.css" %}
+</style>
+
+<section class="gallery-page-content">
+        <div class="gallery-text">Это галерея всех изображений сайта. Возможно, вам здесь что-нибудь приглянётся, и у вас появится новый глоток вдохновения</div>
+        
+        <div class="gallery-switch-m">
+            <div class="switch-section-m">
+                <span class="oth_img">Переключить режим</span>
+                <label class="switch-checkbox">
+                  <input type="checkbox" id="switch-3" class="checkbox"/>
+                  <label for="switch-3" class="toggle">
+                </label>
+              </div>
+        </div>
+
+        <section class="recently-added">
+            <div class="r-a-text">Недавно добавленные</div>
+
+            <div class="slider-items">
+                {% set container  = "recentlyAdded" %}
+                {% include 'slider-w-o-swiper.njk' %}
+            </div>
+
+        </section>
+        <section class="gallery-followed">
+            <div class="g-f-text">Лучшее по мнению авторов</div>
+
+            <div class="slider-items">
+                {% set container  = "galleryFollowed" %}
+                {% include 'slider-w-o-swiper.njk' %}
+            </div>
+
+        </section>
+        <section class="gallery-content">
+            <div class="g-c-text">Галерея изображений</div>
+            <div class="grid-list">
+                {% include 'grid-list.njk' %}
+            </div>
+
+        </section>
+    </section>
+
+
+    <footer class="footer">
+        <p class="footer-description left-text">Воображаемые версии изображений сделаны с</br> помощью нейросети Midjourney, запросами к которой</br> стали увлечения и эмоции авторов сайта.</p>
+        <p class="desc_text_m">Этот сайт сделан студентами школы создания сайтов проекта «Кружок» в городе Сортавала.</p>
+        <p class="copyright center-text">«Кружок», Сортавала 2022–2023.</p>
+      </footer>
