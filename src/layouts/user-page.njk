@@ -1,0 +1,37 @@
+---
+layout: page.njk
+---
+
+<style>
+    {% include "styles/other_pages_css/user-profile.css" %}
+    {% include "styles/mobile/other_pages_css/user-profile.css" %}
+</style>
+
+{% include 'header.njk' %}
+
+<section class="user-profile-content">
+    <div class="user-profile">
+        <div class="user-b-image"></div>
+        <div class="user-content">
+            <img src="{{authorIcon}}" class="user-profile-avatar">
+            <div class="user-profile-nickname">{{authorName}}</div>
+            <p class="user-profile-description">{{content | safe}}</p>
+        </div>
+    </div>
+
+    <div class="user-gallery">
+        <div class="user-gallery-text">Галерея изображений</div>
+        <div class="grid-list">
+        {% set container  = "base" %}
+        {% include 'grid-list.njk' %}
+        </div>
+    </div>
+</section>
+
+
+
+<footer class="footer">
+    <p class="footer-description left-text">{{staticTexts.footerDescription | safe}}</p>
+    <p class="desc_text_m">{{staticTexts.mainWebsiteDescription | safe}}</p>
+    <p class="copyright center-text">{{staticTexts.copyright | safe}}</p>
+</footer>

@@ -39,3 +39,11 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - {label: "Image", name: "image", widget: "image", choose_url: true, allow_multiple: false, default: null}
       - {label: "Tags", name: "tags", widget: "select", options: ["posts"], default: "posts"}
+  - name: "authors"
+    label: "Authors"
+    folder: "src/posts/authors"
+    create: true
+    slug: ""
+    fields:
+      - { label: "Id", name: "id", widget: "string" }
+      - {label: "Image", name: "image", widget: "image", choose_url: true, allow_multiple: false, default: null}

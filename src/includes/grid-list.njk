@@ -1,6 +1,11 @@
 <div class="grid-list">
+    {%if container == 'base'%}
+        {% set tag = collections.posts %} 
+    {%elseif container == 'author'%}
+        {% set tag = collections.author %}
+    {%endif%}
 
-    {% for image in collections.posts %}
+    {% for image in tag %}
         <a href="{{image.url}}" class="image-card--small" id="img_small">
             <img class="image-small image-small--reality" id="change_image" src="{{image.data.image}}">
             <img class="image-small image-small--fantasy hidden-image" id="change_image" src="{{image.data.imageFantasy}}">
