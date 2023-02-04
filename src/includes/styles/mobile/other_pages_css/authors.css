@@ -1,0 +1,48 @@
+@media screen and (max-width: 1150px) {
+    .authors-grid {
+        margin: 0px 22px;
+        gap: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    }
+
+    .author-card {
+        width: 290px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .authors-text {
+        margin: 0 22px;
+    }
+
+    .authors-grid {
+        margin: 0px 22px;
+        gap: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .author-card {
+        width: 90%;
+        min-height: 400px;
+    }
+
+    .author-avatar {
+        margin-top: 10px;
+        width: 200px;
+        height: 200px;
+        border-radius: 128px;
+    }
+
+    .author-nickname {
+        font-size: 24px;
+    }
+
+    .author-description {
+        margin: 0px 10px 20px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    
+}

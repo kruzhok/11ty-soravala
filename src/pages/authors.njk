@@ -1,0 +1,30 @@
+---
+eleventyComputed:
+    title: 'Сортавала – авторы'
+layout: page.njk
+permalink: 'authors.html'
+
+---
+
+ {% include 'header.njk' %}
+
+  <section class="authors-content">
+        <p class="authors-text"></p>
+        <div class="authors-grid">
+        {% for image in collections.posts %}
+            <a href="{{image.url}}" class="author-card">
+               <div> 
+               <img class="author-avatar" src="{{image.data.authorPhoto}}">
+                <p class="author-nickname" align="center">{{image.data.authorName}}</p>
+                </div>
+                <p class="author-description">"{{image.data.authorDescription}}"</p>
+            </a>
+        {% endfor %}
+        </div>
+      </section>
+
+    <footer class="footer">
+        <p class="footer-description left-text">{{staticTexts.footerDescription}}</p>
+        <p class="desc_text_m">{{staticTexts.mainWebsiteDescription}}</p>
+        <p class="copyright center-text">{{staticTexts.copyright}}</p>
+      </footer>

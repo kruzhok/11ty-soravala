@@ -1,3 +1,33 @@
+<div id="background"></div>
+    <button id="close-menu-button" class="close-menu-button">
+      <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="33.1416" y="1" width="4" height="46.8693" rx="2" transform="rotate(45 33.1416 1)" fill="white"/>
+        <rect y="2.8584" width="4" height="46.8693" rx="2" transform="rotate(-45 0 2.8584)" fill="white"/>
+        </svg>
+    </button>
+      <div id="mobile-menu" class="mobile-menu">
+        <div id="content" class="content">
+          <a href="./index.html" class="menu-logo">
+            <svg class="st_logo" width="235" height="97" viewBox="0 0 235 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M49.6709 20.0593C48.9579 7.93804 38.8171 2.12451 27.6083 2.12451C8.53412 2.12451 2.27176 28.367 2.27176 43.1896C2.27176 50.3683 -0.435442 75.1449 11.2392 75.1449C25.1533 75.1449 46.5658 68.6308 52.8024 54.0786C53.7704 51.82 46.4807 55.3124 45.8278 55.929C42.8464 58.7447 43.2657 59.8057 43.2657 64.1847C43.2657 72.024 54.6833 72.1675 59.6347 68.7396C64.0272 65.6986 72.9631 56.2165 62.4815 54.7191C59.1724 54.2464 55.5769 54.6479 52.2331 54.6479C51.2552 54.6479 56.3017 50.5793 57.3573 49.5237" stroke="white" stroke-width="3" stroke-linecap="round"/>
+              <path d="M67.6064 46.9614C67.6064 62.0044 72.7307 106.841 72.7307 91.7985" stroke="white" stroke-width="3" stroke-linecap="round"/>
+              <path d="M72.7307 62.3341C72.7307 56.3729 79.136 48.8351 79.136 58.4909C79.136 64.6435 73.3753 77.3845 67.6064 80.2689" stroke="white" stroke-width="3" stroke-linecap="round"/>
+              <path d="M85.5412 53.367C85.5412 70.1186 84.0104 35.4541 89.6691 51.8013C92.084 58.7777 95.5465 53.8638 98.3518 48.9545C99.1478 47.5615 99.6329 60.0057 99.6329 62.0497C99.6329 70.1338 113.006 56.4355 113.796 51.3031C115.357 41.1541 111.162 45.5054 111.162 52.3706C111.162 57.1005 111.295 63.1957 116.998 64.8254C121.929 66.2341 116.948 53.0272 115.717 51.4454C112.353 47.1205 120.242 59.2855 121.126 61.0534C124.368 67.5374 128.041 60.1104 129.667 55.9291C134.659 43.0915 135.857 31.3185 135.503 17.4973C135.379 12.6844 125.254 -5.92892 125.254 6.53718C125.254 25.4135 122.166 46.0753 137.068 59.4876C138.835 61.078 141.932 52.0859 136.143 52.0859C131.977 52.0859 125.835 52.3179 132.371 55.2886C137.071 57.4251 141.692 54.8868 145.751 54.6481C149.417 54.4324 152.39 58.3329 156.569 57.139C159.435 56.3202 160.093 46.9617 155.999 46.9617C150.277 46.9617 145.751 48.5405 145.751 55.2886C145.751 59.4818 151.916 60.0125 154.718 57.2102C156.351 55.5776 155.999 53.5727 155.999 51.4454C155.999 48.7061 157.566 56.1442 158.562 57.9219C161.197 62.6281 166.104 74.2492 172.653 73.864C176.314 73.6486 176.831 58.3164 178.774 55.6444C180.993 52.5931 177.563 60.4119 179.13 62.7614C179.45 63.2421 180.34 48.0842 180.34 51.3742C180.34 55.7298 182.115 68.4233 187.457 69.9496C194.762 72.0368 191.488 59.6067 195.143 58.5624C198.448 57.6182 203.962 63.8838 208.523 63.6155C213.44 63.3262 209.875 54.6481 205.249 54.6481C203.668 54.6481 198.481 53.7294 197.278 54.9327C196.528 55.6828 205.708 59.2464 206.672 59.4876C215.794 61.7679 224.144 57.2102 232.863 57.2102" stroke="white" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+          </a>
+
+          <div class="main-menu-content">
+            <a href="./picture-page.html">{{staticTexts.menuGallery}}</a>
+            <a href="./authors.html">{{staticTexts.menuAuthors}}</a>
+            <a href="info.html">{{staticTexts.menuInfo}}</a>
+          </div>
+
+          <div class="menu-footer">
+            {{staticTexts.mainWebsiteDescription}}
+          </div>
+        </div>
+    </div>
+
 <header class="header">
   <div class="navigation">
     <button id="menu-toggle" class="menu-button">
@@ -10,9 +40,9 @@
 
 
     <div class="switch-section">
-      <span class="oth_img">Включить режим воображения</span>
+      <span class="oth_img">{{staticTexts.imagineModOn}}</span>
       <label class="switch-checkbox">
-        <input type="checkbox" id="switch" class="checkbox" onclick="test()"/>
+        <input type="checkbox" id="switch" class="checkbox"/>
         <label for="switch" class="toggle">
       </label>
     </div>
@@ -26,8 +56,8 @@
       </svg>
   </a>
   <div class="menu">
-    <a href="#">Галерея</a>
-    <a href="#">Авторы</a>
-    <a href="info.html">О проекте</a>
+    <a href="./picture-page.html">{{staticTexts.menuGallery}}</a>
+    <a href="./authors.html">{{staticTexts.menuAuthors}}</a>
+    <a href="info.html">{{staticTexts.menuInfo}}</a>
   </div>
 </header>

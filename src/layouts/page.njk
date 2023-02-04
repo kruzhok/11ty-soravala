@@ -26,6 +26,10 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon/16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon/32.png">
   <link rel="stylesheet" href="/fonts/fonts.css">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
 
   {% set css %}
     {% include "styles/styles.css" %}
@@ -34,10 +38,12 @@
     {% include "styles/menu.css" %}
     {% include "styles/other_pages_css/info.css" %}
     {% include "styles/other_pages_css/picture-page.css" %}
+     {% include "styles/other_pages_css/authors.css" %}
     {% include "styles/mobile/styles.css" %}
     {% include "styles/mobile/menu.css" %}
     {% include "styles/mobile/other_pages_css/info.css" %}
     {% include "styles/mobile/other_pages_css/picture-page.css" %}
+    {% include "styles/mobile/other_pages_css/authors.css" %}
   {% endset %}
   <style>
     {{ css | cssmin | safe }}
@@ -46,6 +52,10 @@
 <body>
   {{ content | safe }}
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="scripts/mobile-menu.js"></script>
+  <script src="/scripts/mobile-menu.js"></script>
+  <script src="/scripts/save-checkbox.js"></script>
+  <script src="/scripts/picture-mode.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="/scripts/swiper.js"></script>
 </body>
 </html>

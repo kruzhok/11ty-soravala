@@ -47,18 +47,21 @@ a {
 }
 
 .slider {
-  overflow-x: auto;
   /* Задал минимальную высоту, чтобы скролл не налезал на картинки */
   min-height: 570px;
+}
+
+.swiper-wrapper {
+  transition-timing-function: linear;
 }
 
 .slider-items {
   display: flex;
   gap: 18px;
-  overflow-y: hidden;
 }
 
 .image-card--large {
+  width: 560px;
   min-width: 560px;
   height: 560px;
 
@@ -279,8 +282,8 @@ a {
 }
 
 /*.footer-description, .copyright {
-  min-height: 100px; 
-} 
+  min-height: 100px;
+}
 */
 
 .center-text {
