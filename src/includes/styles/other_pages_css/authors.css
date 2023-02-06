@@ -1,0 +1,45 @@
+
+
+.authors-text {
+    margin: 0px 76px;
+    overflow-x: hidden;
+}
+
+.authors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(335px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    justify-items: center;
+    margin: 40px;
+    height: auto;
+}
+
+.author-card {
+    display: grid;
+    width: 340px;
+    min-height: 600px;
+
+    background-color: #3A3636;
+    border-radius: 15px;
+    justify-content: center;
+    justify-items: center;
+}
+
+.author-avatar {
+    margin-top: 30px;
+    width: 256px;
+    height: 256px;
+    border-radius: 128px;
+    margin-bottom: 40px;
+}
+
+.author-nickname {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.author-description {
+    margin: 0px 10px 20px 10px;
+    font-size: 18px;
+}
