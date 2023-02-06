@@ -1,16 +1,20 @@
-$(document).ready(function() {
-  function doAllTheThingsToToggleMenu() {
-    $('#mobile-menu').toggleClass('menu-open');
-    $('#background').toggleClass('menu-open');
-    $('#body').toggleClass('menu-open');
-    $('#menu-toggle').toggleClass('menu-open');
-    $('#close-menu-button').toggleClass('menu-open');
-  }
+const mobileMenu = document.querySelector('#mobile-menu');
+const bg = document.querySelector('#background');
+const  body = document.querySelector('#body');
+const menuToggle = document.querySelector('#menu-toggle');
+const closeMenuButton = document.querySelector('#close-menu-button');
+const elementsArray = [mobileMenu, bg, body, menuToggle, closeMenuButton];
 
-  $('#menu-toggle').on('click', doAllTheThingsToToggleMenu);
-  $('#background').on('click', doAllTheThingsToToggleMenu);
-  $('#close-menu-button').on('click', doAllTheThingsToToggleMenu);
-})
+function doAllTheThingsToToggleMenu() {
+  elementsArray.forEach(item => {
+    item.classList.toggle('menu-open');
+  })
+}
+
+menuToggle&&menuToggle.addEventListener('click', doAllTheThingsToToggleMenu);
+bg&&bg.addEventListener('click', doAllTheThingsToToggleMenu);
+closeMenuButton&&closeMenuButton.addEventListener('click', doAllTheThingsToToggleMenu);
+
 
 
 
