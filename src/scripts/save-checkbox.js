@@ -22,9 +22,11 @@ if(checkboxMobile) {
 }
 
 function checkboxEventListener(checkbox) {
+  if(checkbox) {
     checkbox.addEventListener('change', function() {
-        localStorage.setItem('checkboxValue', this.checked);
+      localStorage.setItem('checkboxValue', this.checked);
     });
+  }
 }
 
 function checkboxChecked(checkbox) {
