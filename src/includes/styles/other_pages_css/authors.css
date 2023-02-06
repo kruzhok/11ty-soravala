@@ -13,11 +13,12 @@
 .author-card {
     display: grid;
     width: 320px;
-    height: 600px;
+    min-height: 600px;
     background-color: #3A3636;
     border-radius: 15px;
     justify-content: center;
     justify-items: center;
+    padding: 16px;
 }
 
 .author-avatar {

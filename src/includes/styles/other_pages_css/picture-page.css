@@ -5,6 +5,7 @@
     margin-bottom: 100px;
     gap: 83px;
     min-height: 600px;
+    align-content: start;
 }
 
 .pic-image {
@@ -22,8 +23,9 @@
 }
 
 .image-info {
-    display: grid;
-    grid-template-rows: 180px 146px 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .pic-author {

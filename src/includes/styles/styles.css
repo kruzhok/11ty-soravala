@@ -1,3 +1,7 @@
+*, *::after, *:before {
+  box-sizing: border-box;
+}
+
 :root {
   --bg-color: #252323;
   --text-color: #ffffff;
@@ -8,6 +12,7 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   overflow-x: hidden;
+  min-width: 320px;
 
   /* Обязательно */
   margin: 0;

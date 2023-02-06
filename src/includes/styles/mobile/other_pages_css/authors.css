@@ -10,9 +10,7 @@
     }
 
     .author-card {
-        min-width: 100px;
-        max-width: 160px;
-        max-height: 280px;
+        width: 100%;
     }
 
     .author-avatar {
@@ -33,10 +31,6 @@
 }
 
 @media screen and (max-width: 421px) {
-    .author-card {
-        max-width: 130px;
-        max-height: 280px;
-    }
 
     .authors-grid {
         margin: 0px 22px;
