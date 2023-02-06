@@ -15,20 +15,38 @@ collections:
         delete: false
         file: "src/data/data.json"
         fields:
+          - {label: "Domain", name: "domain", widget: "string"}
           - {label: "Site Title", name: "title", widget: "string"}
           - {label: "ogImage", name: "ogImage", widget: "image", choose_url: true, allow_multiple: false, default: null}
           - {label: "SEO title", name: "metaTitle", widget: "string"}
           - {label: "SEO description", name: "metaDescription", widget: "string"}
           - {label: "SEO keywords", name: "keywords", widget: "text"}
       # Headings
-      - label: "Headings"
-        name: "page_headings"
+      - label: "Texts"
+        name: "site_texts"
         delete: false
         file: "src/data/staticTexts.json"
         fields:
-          - {label: "Main Title", name: "mainTitle", widget: "string"}
-          - {label: "Sub Title", name: "subTitle", widget: "string"}
-          - {label: "Footer text", name: "footerTitle", widget: "string"}
+          - {label: "Main Website Description", name: "mainWebsiteDescription", widget: "text"}
+          - {label: "Gallery Menu Title", name: "menuGallery", widget: "string"}
+          - {label: "Authors Menu Title", name: "menuAuthors", widget: "string"}
+          - {label: "About Menu Title", name: "menuInfo", widget: "string"}
+          - {label: "Image  Mode On Text", name: "imagineModOn", widget: "string"}
+          - {label: "Image  Mode Swich Text", name: "imagineModSwitch", widget: "string"}
+          - {label: "Index Headline Text", name: "indexHeadlineText", widget: "text"}
+          - {label: "Index Sub-headline Text", name: "indexSubheadlineText", widget: "text"}
+          - {label: "Footer Description Text", name: "footerDescription", widget: "text"}
+          - {label: "Copyright text", name: "copyright", widget: "string"}
+          - {label: "Slider feeling Title", name: "sliderFeeling", widget: "string"}
+          - {label: "Other Pictures Title", name: "otherPictures", widget: "string"}
+          - {label: "Gallery Text", name: "galleryText", widget: "text"}
+          - {label: "Recently Added Title", name: "recentlyAdded", widget: "string"}
+          - {label: "Gallery Followed Title", name: "galleryFollowed", widget: "string"}
+          - {label: "Gallery Content Title", name: "galleryContent", widget: "string"}
+          - {label: "Large Info Text", name: "infoBigText", widget: "text"}
+          - {label: "Small Info Text", name: "infoSmallText", widget: "text"}
+          - {label: "Info Image Text", name: "infoImageText", widget: "string"}
+          - {label: "Info Down Text", name: "infoDownText", widget: "text"}
   - name: "posts"
     label: "Posts"
     folder: "src/posts"
@@ -37,5 +55,12 @@ collections:
     fields:
       - { label: "Id", name: "id", widget: "string" }
       - { label: "Title", name: "title", widget: "string" }
-      - {label: "Image", name: "image", widget: "image", choose_url: true, allow_multiple: false, default: null}
-      - {label: "Tags", name: "tags", widget: "select", options: ["posts"], default: "posts"}
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Image Real", name: "image", widget: "image", choose_url: true, allow_multiple: false, default: null}
+      - { label: "Image Fantasy", name: "imageFantasy", widget: "image", choose_url: true, allow_multiple: false, default: null}
+      - { label: "Picture Emotion", name: "emotion", widget: "string" }
+      - { label: "Author Name", name: "authorName", widget: "string" }
+      - { label: "Author Photo", name: "authorPhoto", widget: "image", choose_url: true, allow_multiple: false, default: null}
+      - { label: "Author Description", name: "authorDescription", widget: "text" }
+      - { label: "Tags", name: "tags", widget: "select", options: ["posts", "featured", "recentlyAdded", "authorsFollowed"], multiple: true, default: "posts"}
+      - { label: 'Picture Description', name: 'body', widget: 'markdown' }
