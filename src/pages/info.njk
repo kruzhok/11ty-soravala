@@ -1,0 +1,36 @@
+---
+eleventyComputed:
+  title: 'Сортавала - о проекте'
+layout: page.njk
+permalink: 'info.html'
+---
+
+{% include 'header.njk' %}
+
+<section class="info-content">
+    <section class="main-text">
+        <div class="big-text">
+            {{staticTexts.infoBigText}}
+        </div>
+        <div class="small-text">
+            {{staticTexts.infoSmallText}}
+        </div>
+    </section>
+
+    <section class="image">
+        <img src="/static/klass.png"/>
+        <div class="image-text">
+            {{staticTexts.infoImageText}}
+        </div>
+    </section>
+  
+    <div class="down-text">
+        {{staticTexts.infoDownText}} 
+    </div>
+</section>
+
+<footer class="footer">
+    <p class="footer-description left-text">{{staticTexts.footerDescription}}</p>
+    <p class="desc_text_m">{{staticTexts.mainWebsiteDescription}}</p>
+    <p class="copyright center-text">{{staticTexts.copyright}}</p>
+</footer>

@@ -1,0 +1,20 @@
+@media screen and (max-width: 900px) {
+    
+    .user-profile-avatar {
+        width: 232px;
+        height: 232px;
+    }
+    
+    .user-profile-description {
+        font-size: 18px;
+        margin-top: 50px;
+        margin: 0px 22px;
+    }
+    
+    .user-gallery-text {
+        text-align: center;
+        font-size: 38px;
+        margin-bottom: 30px;
+        margin-top: 50px;
+    }
+}
