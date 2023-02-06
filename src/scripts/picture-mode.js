@@ -11,14 +11,20 @@ function setImageSmall(tumbler, PhotoName) {
 function setPageImage(tumbler, PhotoName) {
   setImageStateAndTurnItOn(tumbler, PhotoName, 'page-image--fantasy', 'page-image--real', 'hidden-image')
 }
-setImageSmall(tumbler, photos)
-setImageSmall(tumbler, document.querySelectorAll('.backgr-image'))
-setImageSmall(gridTumbler, photos)
-setImageSmall(tumblerMobile, photos)
-setImageSmall(tumblerMobile, document.querySelectorAll('.backgr-image'))
-setPageImage(tumblerMobile, photosDetail)
-setPageImage(tumbler, photosDetail)
-setPageImage(detailTumbler, photosDetail)
+
+let getImagesInterval = setInterval(function(){
+  setImageSmall(tumbler, photos)
+  setImageSmall(tumbler, document.querySelectorAll('.backgr-image'))
+  setImageSmall(gridTumbler, photos)
+  setImageSmall(tumblerMobile, photos)
+  setImageSmall(tumblerMobile, document.querySelectorAll('.backgr-image'))
+  setPageImage(tumblerMobile, photosDetail)
+  setPageImage(tumbler, photosDetail)
+  setPageImage(detailTumbler, photosDetail)
+}, 5000)
+
+window.onunload = () => clearInterval(getImagesInterval);
+
 
 
 tumbler.checked && [
