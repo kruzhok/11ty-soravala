@@ -1,7 +1,8 @@
 const checkboxEmote = document.querySelector('.switch-checkbox .checkbox');
 const checkboxEmoteDetail = document.querySelector('#switch-detail');
+const checkboxMobileEmote = document.querySelector('#switch-3');
 const emote = document.querySelectorAll('.hidden-emotes');
-const emoteDB = [checkboxEmote, checkboxEmoteDetail]
+const emoteDB = [checkboxEmote, checkboxEmoteDetail, checkboxMobileEmote]
 
 //image.classList.remove('hidden-emotes');
 console.log('ок')
