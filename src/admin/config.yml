@@ -47,6 +47,17 @@ collections:
           - {label: "Small Info Text", name: "infoSmallText", widget: "text"}
           - {label: "Info Image Text", name: "infoImageText", widget: "string"}
           - {label: "Info Down Text", name: "infoDownText", widget: "text"}
+  - name: "authors"
+    label: "Authors"
+    folder: "src/authors"
+    create: true
+    slug: ""
+    fields:
+      - { label: "Id", name: "id", widget: "string" }
+      - { label: "Author Name", name: "authorName", widget: "string" }
+      - { label: "Author Photo", name: "authorPhoto", widget: "image", choose_url: true, allow_multiple: false, default: null}
+      - { label: "Tags", name: "tags", widget: "select", options: ["authors"], multiple: true, default: "authors"}
+      - { label: 'Author Description', name: 'body', widget: 'markdown' }
   - name: "posts"
     label: "Posts"
     folder: "src/posts"
@@ -59,8 +70,8 @@ collections:
       - { label: "Image Real", name: "image", widget: "image", choose_url: true, allow_multiple: false, default: null}
       - { label: "Image Fantasy", name: "imageFantasy", widget: "image", choose_url: true, allow_multiple: false, default: null}
       - { label: "Picture Emotion", name: "emotion", widget: "string" }
-      - { label: "Author Name", name: "authorName", widget: "string" }
-      - { label: "Author Photo", name: "authorPhoto", widget: "image", choose_url: true, allow_multiple: false, default: null}
-      - { label: "Author Description", name: "authorDescription", widget: "text" }
+      - { label: "Author Name", name: "authorName", widget: "relation", collection: "authors", search_fields: ["authorName"], value_field: "authorName" }
+      - { label: "Author Photo", name: "authorPhoto", widget: "relation", collection: "authors", search_fields: ["authorPhoto"], value_field: "authorPhoto"}
+      - { label: "Author Description", name: "authorDescription", widget: "relation", collection: "authors", search_fields: ["authorDescription"], value_field: "authorDescription" }
       - { label: "Tags", name: "tags", widget: "select", options: ["posts", "featured", "recentlyAdded", "authorsFollowed"], multiple: true, default: "posts"}
       - { label: 'Picture Description', name: 'body', widget: 'markdown' }

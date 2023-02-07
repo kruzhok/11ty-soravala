@@ -60,6 +60,7 @@ module.exports = (config) => {
   config.addPassthroughCopy('src/scripts');
   config.addPassthroughCopy('src/static');
   config.addPassthroughCopy('src/posts');
+  config.addPassthroughCopy('src/authors');
   config.addPassthroughCopy('src/admin');
 
   // Minified CSS

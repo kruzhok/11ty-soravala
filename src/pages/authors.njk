@@ -11,14 +11,14 @@ permalink: 'authors.html'
   <section class="authors-content">
         <p class="authors-text"></p>
         <div class="authors-grid">
-        {% for image in collections.posts %}
-            <a href="{{image.url}}" class="author-card">
-               <div> 
-               <img class="author-avatar" src="{{image.data.authorPhoto}}">
-                <p class="author-nickname" align="center">{{image.data.authorName}}</p>
+        {% for author in collections.authors %}
+            <div class="author-card">
+               <div>
+               <img class="author-avatar" src="{{author.data.authorPhoto}}">
+                <p class="author-nickname" align="center">{{author.data.authorName}}</p>
                 </div>
-                <p class="author-description">"{{image.data.authorDescription}}"</p>
-            </a>
+                <div class="author-description">{{author.templateContent | safe}}</div>
+            </div>
         {% endfor %}
         </div>
       </section>
