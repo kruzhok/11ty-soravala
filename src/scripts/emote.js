@@ -8,7 +8,11 @@ console.log('ок')
 
 if(checkboxEmote.checked) {
     emote.forEach(function(e) {
-        e.classList.remove('hidden-emotes');
+        e.style.opacity = '100%';
+    });
+} else {
+    emote.forEach(function(e) {
+        e.style.opacity = '0%';
     });
 }
 
