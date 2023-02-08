@@ -13,9 +13,9 @@ permalink: 'authors.html'
         <div class="authors-grid">
         {% for author in collections.authors %}
             <div class="author-card">
-               <div>
+               <div align="center">
                <img class="author-avatar" src="{{author.data.authorPhoto}}">
-                <p class="author-nickname" align="center">{{author.data.authorName}}</p>
+                <p class="author-nickname">{{author.data.authorName}}</p>
                 </div>
                 <div class="author-description">{{author.templateContent | safe}}</div>
             </div>
