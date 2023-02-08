@@ -98,9 +98,25 @@ a {
 }
 
 .emote {
+  position: relative;
   background-color: black;
   padding: 5px 10px;
   border-radius: 15px;
+  top: -10px;
+}
+
+.emotion {
+  display: flex;
+  gap: 10px;
+}
+
+.hidden-emotes {
+  transition: all 0.5s;
+}
+
+.em {
+  position: relative;
+  top: 10px;
 }
 
 .headline {
