@@ -1,7 +1,7 @@
 const checkboxEmote = document.querySelector('.switch-checkbox .checkbox');
 const checkboxEmoteDetail = document.querySelector('#switch-detail');
 const checkboxMobileEmote = document.querySelector('#switch-3');
-const emote = document.querySelectorAll('.hidden-emotes');
+const emote = document.querySelectorAll('.emotion');
 const emoteDB = [checkboxEmote, checkboxEmoteDetail, checkboxMobileEmote]
 
 //image.classList.remove('hidden-emotes');
@@ -9,11 +9,17 @@ console.log('ок')
 
 if(checkboxEmote.checked) {
     emote.forEach(function(e) {
-        e.style.opacity = '100%';
+        e.style.display = 'flex';
+        setTimeout(()=>{
+            e.style.opacity = '1';
+        }, 300)
     });
 } else {
     emote.forEach(function(e) {
-        e.style.opacity = '0%';
+        setTimeout(()=>{
+            e.style.display = 'none';
+        }, 300)  
+        e.style.opacity = '0';      
     });
 }
 
@@ -22,11 +28,17 @@ function emoteToggle(checkbox) {
         checkbox.addEventListener('change', function() {
             if (checkbox.checked){
                 emote.forEach(function(e) {
-                    e.style.opacity = '100%';
+                    e.style.display = 'flex';
+                    setTimeout(()=>{
+                        e.style.opacity = '1';
+                    }, 300)
                 });
             } else {
                 emote.forEach(function(e) {
-                    e.style.opacity = '0%';
+                    setTimeout(()=>{
+                        e.style.display = 'none';
+                    }, 300)  
+                    e.style.opacity = '0';      
                 });
             }
         })
