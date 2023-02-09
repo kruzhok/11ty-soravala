@@ -6,9 +6,18 @@
         padding: 20px 10px 0px 10px;
     }
 
+    .description {
+        padding: 0 40px 12px 40px;
+    }
+
     .desc_text {
-        font-size: 14px;
-        padding-left: 22px;
+        font-size: 24px;
+        padding-left: 0;
+    }
+
+    .desc_subtext {
+        font-size: 12px;
+        padding-left: 0;
     }
 
     .slider {
@@ -57,10 +66,11 @@
     .headline-text {
         max-width: 90%;
         font-size: 24px;
+        margin-bottom: 12px;
     }
     
     .subheadline-text {
-        font-size: 16px;
+        font-size: 12px;
         max-width: 70%;
     }
     
@@ -89,7 +99,7 @@
 
     .footer {
         display: flex;
-        gap: 60px;
+        gap: 20px;
         align-items: start;
         flex-direction: column;
         margin-top: 120px;
@@ -108,7 +118,6 @@
       
     .switch-section-m {
         margin-top: 30px;
-        padding-left: 22px;
         display: table;
     }
       

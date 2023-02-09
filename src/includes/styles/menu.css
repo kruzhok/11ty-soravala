@@ -10,7 +10,6 @@
     align-items: center;
     height: 100px;
     gap: 10px;
-    font-size: 18px;
 }
   
 .logo {
@@ -30,13 +29,15 @@
 }
 
 .oth_img {
+    font-family: 'Plaid Mono';
     margin-right: 5px;
-    
+    max-width: 120px;
 }
 
 .menu {
     display: flex;
-    gap: 30px;
+    font-family: 'Plaid Mono';
+    gap: 24px;
     justify-content: right;
     align-items: center;
 }
