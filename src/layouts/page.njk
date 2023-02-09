@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="utf-8">
   <title>
@@ -32,6 +32,7 @@
   />
 
   {% set css %}
+    {% include "styles/preloader.css" %}
     {% include "styles/styles.css" %}
     {% include "styles/switch-checkbox.css" %}
     {% include "styles/images.css" %}
@@ -52,7 +53,11 @@
   </style>
 </head>
 <body id="body">
-  {{ content | safe }}
+  <div class="root">
+    {{ content | safe }}
+  </div>
+  {% include "preloader.njk" %}
+  <script src="/scripts/preloader.js"></script>
   <script src="/scripts/mobile-menu.js"></script>
   <script src="/scripts/save-checkbox.js"></script>
   <script src="/scripts/picture-mode.js"></script>
