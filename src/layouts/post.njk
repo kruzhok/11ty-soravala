@@ -32,12 +32,14 @@ layout: page.njk
               <img src="{{authorPhoto}}" class="user-avatar">
           </div>
           <div class="mobile-orientation">
-              <div class="pic-nickname">{{authorName}}</div>
+              <div class="signature">{{description}}</div>
+              <div class="pic-nickname">
+                {{authorName}}
+              </div>
               <div class="emotion hidden-emotes">
                 <p class="feeling">{{staticTexts.sliderFeeling}}</p>
                 <p class="emote">{{emotion}}</p>
               </div>
-              <div class="signature">{{description}}</div>
           </div>
       </div>
         <div class="img-about">
@@ -55,6 +57,5 @@ layout: page.njk
     <footer class="footer">
         <!-- Поменял разметку, можно обойтись без div -->
         <p class="footer-description left-text">{{staticTexts.footerDescription | safe}}</p>
-        <p class="desc_text_m">{{staticTexts.mainWebsiteDescription | safe}}</p>
         <p class="copyright center-text">{{staticTexts.copyright | safe}}</p>
       </footer>
