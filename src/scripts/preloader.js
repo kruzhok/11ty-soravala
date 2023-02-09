@@ -17,7 +17,7 @@ delay(2000)
 delay(3000)
 .then(()=>{
   preloader.classList.remove('fadedIn');
-  preloader.classList.remove('fadedOut');
+  preloader.classList.add('fadedOut');
 }
 )
 
