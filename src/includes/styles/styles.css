@@ -9,11 +9,12 @@
 
 body {
   font-family: "Inter", sans-serif;
+  font-family: "Plaid", sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
   overflow-x: hidden;
   min-width: 320px;
-
+  -webkit-font-smoothing: antialiased;
   /* Обязательно */
   margin: 0;
 }
@@ -25,6 +26,8 @@ a {
 
 .header {
   min-height: 193px;
+  font-family: 'Plaid Mono';
+  font-size: 14px;
   display: grid;
   grid-template-columns: 1fr 230px 1fr;
   gap: 20px;
@@ -49,11 +52,23 @@ a {
 .desc_text {
   font-size: 54px;
   padding-left: 64px;
+  max-width: 1100px;
+  text-align: center;
+  margin: 20px auto 0;
+}
+
+.desc_subtext {
+  font-family: 'Plaid Mono';
+  font-size: 18px;
+  padding-left: 64px;
+  max-width: 900px;
+  text-align: center;
 }
 
 .slider {
   /* Задал минимальную высоту, чтобы скролл не налезал на картинки */
   min-height: 570px;
+  margin-top: 30px;
 }
 
 .swiper-wrapper {
@@ -121,7 +136,7 @@ a {
 
 .headline {
   box-sizing: border-box;
-  padding: 89px 64px 118px;
+  padding: 89px 64px 64px;
 }
 
 .headline-text {
@@ -136,10 +151,11 @@ a {
 }
 
 .subheadline-text {
-  font-size: 24px;
-  max-width: 963px;
+  font-size: 18px;
+  font-family: 'Plaid Mono';
+  max-width: 650px;
   /* Были лишние отступы из браузера */
-  margin: 0;
+  margin: 20px 0;
 }
 
 .grid {
@@ -173,7 +189,7 @@ a {
 }
 
 .tumbler-text {
-  opacity: .8;
+  font-family: 'Plaid Mono';
   /* margin-left: 50px; */
   /* Тут вообще лучше убрать все отступы */
   margin: 0;
@@ -249,6 +265,10 @@ a {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  position: absolute;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
   /* width: auto; */
 }
 
@@ -262,8 +282,8 @@ a {
   justify-content: center; */
   /* border-radius: 50%; */
   /* z-index: 2; */
-  bottom: 20px;
-  left: 20px;
+  bottom: 15px;
+  left: 15px;
 
   /* Сделал флекс-контейнером, чтобы расположить в линию имя и картинку */
   display: flex;
@@ -281,7 +301,9 @@ a {
 }
 
 .nickname {
+  /* font-family: 'Plaid Mono'; */
   font-size: 18px;
+  font-weight: 400;
   margin: 0;
   /* position: absolute;
   bottom: 8px;
@@ -289,23 +311,27 @@ a {
 }
 
 .footer {
+  font-family: 'Plaid Mono';
   min-height: 155px;
   display: flex;
   gap: 91px;
   align-items: start;
   margin-top: 150px;
   padding: 0 64px;
+  font-size: 12px;
+  line-height: 1.4;
 }
 
 .left-text {
   /* Лишний отступ из браузера */
   margin: 0;
+  max-width: 350px;
 }
 
-/*.footer-description, .copyright {
-  min-height: 100px;
+.copyright {
+  max-width: 300px;
 }
-*/
+
 
 .center-text {
   /* margin-top: 35px; */
@@ -315,5 +341,6 @@ a {
 .desc_text_m {
   /* Лишний отступ из браузера */
   margin: 0;
+  max-width: 350px;
   /* display: none; */
 }
