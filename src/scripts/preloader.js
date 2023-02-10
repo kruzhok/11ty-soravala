@@ -10,7 +10,7 @@ function delay(ms) {
 
 if(sessionStorage.getItem("preloaderPlayed")) {
   preloader.style.display = 'none'
-  delay(300)
+  delay(0)
     .then(()=>root.classList.add('fadedIn'))
 } else {
   delay(100)
